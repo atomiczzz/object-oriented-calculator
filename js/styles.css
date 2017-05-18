@@ -1,0 +1,86 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.calculator {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: yellowgreen;
+    box-shadow: 0 0 30px grey;
+    border-radius: 4px;
+}
+
+.calculator_form {
+    height: 100%;
+    padding: 20px;
+}
+
+.calculator_row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc_display {
+    margin: 0 0 20px;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: right;
+    font: 700 16px/1 Arial, sans-serif;
+    color: darkslateblue;
+    background-color: whitesmoke;
+}
+
+.calc_button {
+    width: 41px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    background-color: teal;
+}
+
+.op_button {
+    width: 41px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    background-color: teal;
+  }
+
+.equal {
+    width: 98px;
+}
+
+.calc_button:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+.calc_button::-moz-focus-inner {
+    border: none;
+}
+
+.op_button:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+.op_button::-moz-focus-inner {
+    border: none;
+}
